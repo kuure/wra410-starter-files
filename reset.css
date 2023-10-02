@@ -1,0 +1,29 @@
+/* CSS RESETS */
+
+
+/* reset EVERY SINGLE ELEMENT to use border-box sizing */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+
+/* remove the default margins from these elements */
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+	margin: 0;
+}
+
+
+/* make the body element always 100% of the height of the window,
+   and set the line-height to 1.4 */
+body {
+	min-height: 100vh;
+	line-height: 1.4;
+}
+
+
+/* make the line-height a bit smaller for these elements to prevent weird spacing */
+h1, h2, h3, h4, button, input, label {
+	line-height: 1.1;
+}
+
+/* END RESETS */

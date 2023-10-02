@@ -1,0 +1,64 @@
+/* 
+
+Using Google Fonts:
+
+The @import method means your font information is all 
+contained in the CSS, totally seperate from your HTML
+
+
+It has to be the first non-comment line in your CSS 
+file for it to work
+
+This example retrieves two fonts - 'Inter' and 
+'Libre Baskerville' - and information for both is retrieved
+from Google at the same time to save traffic
+
+I selected two font variants - 'Regular' and 'Bold' - of 
+Inter, which in CSS you can represent with the values 400 
+and 700, respectively.
+
+I also asked for the Regular (400) weight Baskerville font 
+along with the italic version.
+
+This is the URL Google generated based on these selections:
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Libre+Baskerville:ital@0;1&display=swap');
+
+
+
+/*
+
+You can now use these by setting the 'font-family' property
+of elements.
+
+The default font-weight value is 400, so you don't need to
+explicitly state it:
+
+body { 
+font-family: 'Libre Baskerville', serif;
+}
+
+
+But to use a different weight, you need to specify that:
+
+h1,h2,h3,h4 {
+font-family: 'Inter', sans-serif;
+font-weight: 700;
+}
+
+*/
+
+
+
+
+/* all your stuff goes below...*/
+
+
+
+
+
+
+
+
+

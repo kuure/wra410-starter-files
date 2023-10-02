@@ -1,0 +1,49 @@
+@import url('../reset.css');
+@import url('../google-fonts.css');
+
+
+body {
+	background-color: rgb(240,240,0);
+}
+
+#imageContainer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	margin: 0 auto;
+	max-width: 80%;
+}
+
+.dog {
+	background-color: rgb(255,255,255);
+	padding: 1rem;
+	max-width: 30rem;
+	border-radius: 10px;
+
+	box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
+	opacity: 0.9;
+	transition: all 0.5s;
+  margin: 1rem;
+}
+
+
+.dog img {
+	max-width: 100%;
+}
+
+
+.dog:hover {
+	box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+	opacity: 1;
+}
+
+
+@media screen and (max-width: 800px) {
+	
+	#imageContainer { 
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6,1fr);
+	}
+
+
+}
