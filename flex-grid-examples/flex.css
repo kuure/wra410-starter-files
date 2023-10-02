@@ -45,7 +45,7 @@ nav {
 nav ul {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-direction: column;
 	
 	padding: 0;
@@ -53,19 +53,17 @@ nav ul {
 }
 
 
-nav ul li {
+nav ul li a::hover,
+nav ul li a.active {
+	background-color: rgb(0, 237, 250);
+	cursor: pointer;
+}
+
+nav ul li a {
 	padding: 0.5rem 1rem;
 	margin: 0.5rem;
 	background-color: rgb(0, 200, 210);
 	transition: all 0.2s ease-in; 
-}
-
-nav ul li:hover,
-nav ul li.active {
-		background-color: rgb(0, 237, 250);
-}
-
-nav ul li a {
 	text-decoration: none;
 }
 
